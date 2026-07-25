@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#123832"/>
+      <stop offset="100%" stop-color="#0F3830"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9AF6B"/>
+      <stop offset="100%" stop-color="#B8863E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- open ledger book -->
+  <g transform="translate(256,272)">
+    <!-- left page -->
+    <path d="M0,-96 C-70,-118 -140,-112 -178,-92 L-178,88 C-140,68 -70,62 0,86 Z" fill="#F1F3EC"/>
+    <!-- right page -->
+    <path d="M0,-96 C70,-118 140,-112 178,-92 L178,88 C140,68 70,62 0,86 Z" fill="#F1F3EC" opacity="0.94"/>
+    <!-- spine -->
+    <rect x="-6" y="-104" width="12" height="196" fill="url(#gold)"/>
+
+    <!-- rule lines left -->
+    <g stroke="#0F3830" stroke-width="4" opacity="0.16" stroke-linecap="round">
+      <line x1="-152" y1="-58" x2="-32" y2="-46"/>
+      <line x1="-152" y1="-28" x2="-32" y2="-16"/>
+      <line x1="-152" y1="2" x2="-32" y2="14"/>
+      <line x1="-152" y1="32" x2="-32" y2="44"/>
+    </g>
+    <!-- rule lines right -->
+    <g stroke="#0F3830" stroke-width="4" opacity="0.16" stroke-linecap="round">
+      <line x1="32" y1="-46" x2="152" y2="-58"/>
+      <line x1="32" y1="-16" x2="152" y2="-28"/>
+      <line x1="32" y1="14" x2="152" y2="2"/>
+      <line x1="32" y1="44" x2="152" y2="32"/>
+    </g>
+
+    <!-- rising bar-chart accent on right page -->
+    <g transform="translate(96,26)">
+      <rect x="-46" y="4" width="16" height="26" rx="3" fill="url(#gold)"/>
+      <rect x="-24" y="-10" width="16" height="40" rx="3" fill="url(#gold)"/>
+      <rect x="-2" y="-26" width="16" height="56" rx="3" fill="url(#gold)"/>
+    </g>
+  </g>
+
+  <!-- Bangla-friendly monogram feel: gold underline -->
+  <rect x="176" y="400" width="160" height="8" rx="4" fill="url(#gold)"/>
+</svg>
