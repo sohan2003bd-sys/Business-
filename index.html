@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Khatabook — Business Ledger</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="logo-192.png">
+<meta name="theme-color" content="#0A2A24">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Khatabook">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#152420;
+    --paper:#F5F7F5;
+    --paper-deep:#E7ECE6;
+    --green-900:#0A2A24;
+    --green-800:#0F3D34;
+    --green-700:#146B57;
+    --green-600:#17A379;
+    --gold:#EAA23A;
+    --gold-light:#F5C36B;
+    --rule:rgba(10,42,36,0.09);
+    --card:#FFFFFF;
+    --muted:#5E6D66;
+    --loss:#E24C4B;
+    --loss-bg:#FBEAEA;
+    --profit-bg:#E2F5EC;
+    --shadow: 0 10px 30px rgba(10,42,36,0.09);
+    --radius: 18px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    overscroll-behavior-y: none;
+  }
+  h1,h2,h3,.display{ font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em; }
+  .num{ font-family:'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; }
+  button{ font-family:inherit; cursor:pointer; }
+  input,select,textarea{ font-family:inherit; }
+  ::selection{ background:var(--gold-light); color:var(--green-900); }
+
+  /* ---------- Ledger rule-line signature texture ---------- */
+  .ruled{
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 27px,
+      var(--rule) 27px,
+      var(--rule) 28px
+    );
+  }
+  .perforated{
+    position:relative;
+  }
+  .perforated::before{
+    content:"";
+    position:absolute;
+    top:-1px; left:0; right:0; height:10px;
+    background-image: radial-gradient(circle, var(--paper) 3px, transparent 3.2px);
+    background-size: 18px 10px;
+    background-position: 9px 0;
+    background-repeat: repeat-x;
+  }
+
+  /* ---------- App shell ---------- */
+  #app{ display:block; max-width:520px; margin:0 auto; min-height:100vh; position:relative; padding-bottom:84px; }
+  .topbar{
+    position:sticky; top:0; z-index:30;
+    background:linear-gradient(135deg, var(--green-900), var(--green-700) 130%);
+    color:#fff;
+    padding:16px 18px 14px;
+    display:flex; align-items:center; justify-content:space-between;
+    box-shadow: var(--shadow);
+  }
+  .topbar .brand{ display:flex; align-items:center; gap:10px; min-width:0; }
+  .topbar .mark{
+    width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg, var(--gold-light), var(--gold));
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif; font-weight:700; color:var(--green-900); font-size:16px; flex:none;
+    box-shadow: 0 3px 8px rgba(184,134,62,0.5);
+  }
+  .topbar .co-name{ font-size:17px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .topbar .co-sub{ font-size:10.5px; color:var(--gold-light); letter-spacing:.06em; text-transform:uppercase; }
+  .topbar-actions{ display:flex; align-items:center; gap:8px; flex:none; }
+  .icon-btn.spinning svg{ animation: spin .8s linear infinite; }
+  @keyframes spin{ from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
+  .sync-pill{
+    position:fixed; top:10px; left:50%; transform:translateX(-50%) translateY(-140%);
+    background:var(--green-900); color:#fff; font-size:11.5px; font-weight:600;
+    padding:7px 14px; border-radius:999px; z-index:60; box-shadow:var(--shadow);
+    transition: transform .3s ease; display:flex; align-items:center; gap:6px;
+  }
+  .sync-pill.show{ transform:translateX(-50%) translateY(0); }
+  .icon-btn{
+    background:rgba(255,255,255,0.12); border:none; color:#fff;
+    width:38px;height:38px;border-radius:10px;
+    display:flex;align-items:center;justify-content:center; flex:none;
+  }
+  .icon-btn:active{ background:rgba(255,255,255,0.22); }
+
+  main{ padding:18px 16px 8px; }
+  .page{ display:none; animation: fadeIn .25s ease; }
+  .page.active{ display:block; }
+  @keyframes fadeIn{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+
+  .section-title{ font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:22px 2px 10px; display:flex; align-items:center; justify-content:space-between;}
+
+  /* ---------- Segmented period tabs ---------- */
+  .segmented{
+    display:flex; background:var(--paper-deep); border-radius:12px; padding:4px; gap:2px;
+  }
+  .segmented button{
+    flex:1; border:none; background:transparent; padding:9px 4px; border-radius:9px;
+    font-size:12.5px; font-weight:600; color:var(--muted);
+  }
+  .segmented button.active{ background:var(--green-800); color:#fff; }
+
+  /* ---------- KPI cards ---------- */
+  .kpi-grid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:14px; }
+  .kpi-card{
+    background:var(--card); border-radius:var(--radius); padding:14px 14px 12px;
+    box-shadow:var(--shadow); border:1px solid rgba(15,56,48,0.06);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .kpi-card:active{ transform:scale(0.98); }
+  .kpi-card .lbl{ font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .kpi-card .val{ font-size:19px; margin-top:4px; }
+  .kpi-card.wide{ grid-column:1 / -1; }
+  .kpi-card.profit .val{ color:var(--green-600); }
+  .kpi-card.loss .val{ color:var(--loss); }
+  .kpi-card.accent-sales{ border-left:4px solid var(--green-600); }
+  .kpi-card.accent-purchase{ border-left:4px solid var(--gold); }
+  .kpi-card.accent-expense{ border-left:4px solid var(--loss); }
+  .kpi-card.accent-profit{ border-left:4px solid var(--green-900); }
+
+  .pl-banner{
+    margin-top:12px; border-radius:var(--radius); padding:16px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .pl-banner.pos{ background:var(--profit-bg); }
+  .pl-banner.neg{ background:var(--loss-bg); }
+  .pl-banner .t1{ font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+  .pl-banner .t2{ font-size:26px; margin-top:2px; }
+  .pl-banner.pos .t2{ color:var(--green-600); }
+  .pl-banner.neg .t2{ color:var(--loss); }
+  .pl-banner .margin{ font-size:12px; color:var(--muted); text-align:right; }
+
+  /* ---------- Chart card ---------- */
+  .chart-card{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px; margin-top:16px; border:1px solid rgba(15,56,48,0.06); }
+  .chart-card h3{ font-size:15px; margin:0 0 12px; }
+  .legend{ display:flex; gap:14px; font-size:11px; color:var(--muted); margin-bottom:6px; }
+  .legend span{ display:inline-flex; align-items:center; gap:5px; }
+  .dot{ width:8px;height:8px;border-radius:50%; display:inline-block; }
+
+  /* ---------- Ledger list rows ---------- */
+  .ledger-card{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); border:1px solid rgba(15,56,48,0.06); overflow:hidden; margin-top:8px; }
+  .txn-row{ display:flex; align-items:center; justify-content:space-between; padding:13px 14px; border-bottom:1px solid var(--rule); gap:10px; }
+  .txn-row:last-child{ border-bottom:none; }
+  .txn-left{ min-width:0; }
+  .txn-name{ font-weight:600; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:180px; }
+  .txn-meta{ font-size:11.5px; color:var(--muted); margin-top:2px; }
+  .txn-right{ text-align:right; flex:none; }
+  .txn-amt{ font-size:14.5px; font-weight:600; }
+  .txn-amt.sales{ color:var(--green-600); }
+  .txn-amt.purchase{ color:var(--gold); }
+  .txn-amt.expense{ color:var(--loss); }
+  .txn-actions{ display:flex; gap:6px; margin-top:4px; justify-content:flex-end; }
+  .mini-btn{ border:none; background:var(--paper-deep); border-radius:7px; width:24px;height:24px; font-size:11px; display:flex; align-items:center; justify-content:center; color:var(--ink); }
+
+  .empty-state{ text-align:center; padding:44px 20px; color:var(--muted); }
+  .empty-state .glyph{ font-size:34px; margin-bottom:8px; }
+  .empty-state .hint{ font-size:12.5px; margin-top:4px; }
+
+  .fab{
+    position:fixed; right:calc(50% - 260px + 20px); bottom:96px; z-index:25;
+    width:56px;height:56px;border-radius:18px;
+    background:linear-gradient(135deg, var(--gold-light), var(--gold)); color:var(--green-900); border:none;
+    box-shadow:0 10px 22px rgba(184,134,62,0.45);
+    font-size:26px; display:flex; align-items:center; justify-content:center;
+    transition: transform .12s ease;
+  }
+  .fab:active{ transform:scale(0.94); }
+  @media (max-width:560px){ .fab{ right:20px; } }
+
+  /* ---------- Bottom nav ---------- */
+  .bottomnav{
+    position:fixed; bottom:0; left:0; right:0; z-index:30;
+    max-width:520px; margin:0 auto;
+    background:var(--green-800); display:flex;
+    padding:8px 6px calc(8px + env(safe-area-inset-bottom));
+    box-shadow:0 -6px 20px rgba(15,40,34,0.18);
+  }
+  .navbtn{ flex:1; background:none; border:none; color:rgba(255,255,255,0.55); display:flex; flex-direction:column; align-items:center; gap:3px; padding:6px 2px; border-radius:10px; }
+  .navbtn svg{ width:21px;height:21px; }
+  .navbtn span{ font-size:10px; font-weight:600; letter-spacing:.02em; }
+  .navbtn.active{ color:#fff; }
+  .navbtn.active .dot-ind{ display:block; }
+  .dot-ind{ display:none; width:4px;height:4px;border-radius:50%;background:var(--gold); margin-top:-2px; }
+
+  /* ---------- Forms / inputs ---------- */
+  .field{ margin-bottom:14px; }
+  .field label{ display:block; font-size:11.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; }
+  .field input, .field select, .field textarea{
+    width:100%; border:1.5px solid var(--paper-deep); background:var(--paper); border-radius:11px;
+    padding:11px 12px; font-size:14.5px; color:var(--ink); outline:none;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{ border-color:var(--green-700); background:#fff; }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .computed-total{
+    background:var(--paper-deep); border-radius:11px; padding:12px 14px; display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;
+  }
+  .computed-total .v{ font-size:17px; font-weight:600; }
+
+  .btn{
+    width:100%; padding:13px; border-radius:12px; border:none; font-weight:600; font-size:14.5px;
+  }
+  .btn-primary{ background:var(--green-800); color:#fff; }
+  .btn-primary:active{ background:var(--green-900); }
+  .btn-gold{ background:var(--gold); color:var(--green-900); }
+  .btn-ghost{ background:transparent; color:var(--muted); border:1.5px solid var(--paper-deep); }
+  .btn-danger{ background:var(--loss-bg); color:var(--loss); }
+
+  /* ---------- Modal / bottom sheet ---------- */
+  .overlay{ position:fixed; inset:0; background:rgba(15,24,20,0.45); z-index:60; display:none; }
+  .overlay.open{ display:block; }
+  .sheet{
+    position:fixed; left:0; right:0; bottom:0; z-index:61;
+    max-width:520px; margin:0 auto; background:var(--paper);
+    border-radius:20px 20px 0 0; padding:22px 18px calc(20px + env(safe-area-inset-bottom));
+    transform:translateY(110%); transition:transform .28s cubic-bezier(.2,.8,.2,1);
+    max-height:88vh; overflow-y:auto;
+  }
+  .sheet.open{ transform:translateY(0); }
+  .sheet-handle{ width:38px;height:4px;background:var(--paper-deep); border-radius:3px; margin:0 auto 14px; }
+  .sheet h2{ font-size:19px; margin:0 0 16px; }
+  .sheet-close{ position:absolute; right:16px; top:18px; background:none; border:none; font-size:20px; color:var(--muted); }
+
+  /* ---------- Settings ---------- */
+  .settings-block{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px; margin-bottom:14px; border:1px solid rgba(15,56,48,0.06); }
+  .settings-block h3{ font-size:14px; margin:0 0 12px; display:flex; align-items:center; gap:8px; }
+  .chip-row{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px; }
+  .chip{ background:var(--paper-deep); border-radius:20px; padding:7px 10px 7px 13px; font-size:12.5px; display:flex; align-items:center; gap:7px; }
+  .chip button{ border:none; background:rgba(0,0,0,0.08); width:16px;height:16px;border-radius:50%; font-size:9px; display:flex;align-items:center;justify-content:center; color:var(--ink); }
+  .chip-add{ display:flex; gap:8px; }
+  .chip-add input{ flex:1; }
+  .chip-add button{ padding:0 14px; border-radius:10px; border:none; background:var(--green-800); color:#fff; font-size:13px; }
+  .field-inline{ display:flex; align-items:center; justify-content:space-between; padding:10px 0; border-bottom:1px solid var(--rule); }
+  .field-inline:last-child{ border-bottom:none; }
+  .field-inline .k{ font-size:13.5px; color:var(--ink); font-weight:500; }
+  .field-inline .v{ font-size:12.5px; color:var(--muted); }
+  .helper-text{ font-size:11.5px; color:var(--muted); line-height:1.5; margin-top:6px; }
+
+  .toast{
+    position:fixed; left:50%; bottom:100px; transform:translate(-50%, 20px); z-index:80;
+    background:var(--green-900); color:#fff; padding:11px 18px; border-radius:30px; font-size:13px;
+    opacity:0; transition:all .25s ease; box-shadow:var(--shadow); white-space:nowrap;
+  }
+  .toast.show{ opacity:1; transform:translate(-50%, 0); }
+</style>
+</head>
+<body>
+
+<!-- ===================== APP SHELL ===================== -->
+<div id="app">
+  <div class="topbar">
+    <div class="brand">
+      <div class="mark" id="brandMark"><img src="data:image/png;base64,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" alt="Khatabook logo" style="width:100%;height:100%;object-fit:cover;border-radius:9px;"></div>
+      <div style="min-width:0;">
+        <div class="co-name" id="topCoName">My Business</div>
+        <div class="co-sub" id="topPageLabel">Dashboard</div>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="refreshBtn" onclick="manualRefresh()" aria-label="Refresh">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+      </button>
+      <button class="icon-btn" onclick="goPage('settings')" aria-label="Settings">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      </button>
+    </div>
+  </div>
+  <div class="sync-pill" id="syncPill">Synced just now</div>
+
+  <main>
+
+    <!-- ============ DASHBOARD PAGE ============ -->
+    <section class="page active" id="page-dashboard">
+      <div class="segmented" id="periodTabs">
+        <button data-period="today" class="active">Daily</button>
+        <button data-period="week">Weekly</button>
+        <button data-period="month">Monthly</button>
+        <button data-period="year">Yearly</button>
+      </div>
+
+      <div class="pl-banner" id="plBanner">
+        <div>
+          <div class="t1">Profit / Loss</div>
+          <div class="t2 num" id="plValue">৳0.00</div>
+        </div>
+        <div class="margin">Margin<br><span id="plMargin" class="num">0.0%</span></div>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card accent-sales">
+          <div class="lbl">Total Sales</div>
+          <div class="val num" id="kpiSales">৳0.00</div>
+        </div>
+        <div class="kpi-card accent-purchase">
+          <div class="lbl">Total Purchase</div>
+          <div class="val num" id="kpiPurchase">৳0.00</div>
+        </div>
+        <div class="kpi-card accent-expense">
+          <div class="lbl">Total Expense</div>
+          <div class="val num" id="kpiExpense">৳0.00</div>
+        </div>
+        <div class="kpi-card accent-profit">
+          <div class="lbl">Transactions</div>
+          <div class="val num" id="kpiCount">0</div>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h3>Monthly Trend — <span id="chartYear"></span></h3>
+        <div class="legend">
+          <span><i class="dot" style="background:var(--green-600)"></i>Sales</span>
+          <span><i class="dot" style="background:var(--gold)"></i>Purchase</span>
+          <span><i class="dot" style="background:var(--loss)"></i>Expense</span>
+        </div>
+        <svg id="trendChart" width="100%" height="150" viewBox="0 0 480 150"></svg>
+      </div>
+
+      <div class="section-title">Recent Activity</div>
+      <div class="ledger-card" id="recentActivity"></div>
+    </section>
+
+    <!-- ============ SALES PAGE ============ -->
+    <section class="page" id="page-sales">
+      <div class="section-title">Sales Ledger <span class="num" id="salesTotalLbl">৳0.00</span></div>
+      <div class="ledger-card" id="salesList"></div>
+    </section>
+
+    <!-- ============ PURCHASE PAGE ============ -->
+    <section class="page" id="page-purchase">
+      <div class="section-title">Purchase Ledger <span class="num" id="purchaseTotalLbl">৳0.00</span></div>
+      <div class="ledger-card" id="purchaseList"></div>
+    </section>
+
+    <!-- ============ EXPENSE PAGE ============ -->
+    <section class="page" id="page-expense">
+      <div class="section-title">Expense Ledger <span class="num" id="expenseTotalLbl">৳0.00</span></div>
+      <div class="ledger-card" id="expenseList"></div>
+    </section>
+
+    <!-- ============ SETTINGS PAGE ============ -->
+    <section class="page" id="page-settings">
+
+      <div class="settings-block">
+        <h3>Business Profile</h3>
+        <div class="field">
+          <label>Company Name</label>
+          <input type="text" id="settingsCoName" placeholder="e.g. Karim Traders">
+        </div>
+        <div class="field" style="margin-bottom:0;">
+          <label>Currency Symbol</label>
+          <select id="settingsCurrency">
+            <option value="৳">৳ — Bangladeshi Taka</option>
+            <option value="$">$ — US Dollar</option>
+            <option value="₹">₹ — Indian Rupee</option>
+            <option value="€">€ — Euro</option>
+            <option value="£">£ — British Pound</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" style="margin-top:16px;" onclick="saveProfile()">Save Changes</button>
+      </div>
+
+      <div class="settings-block">
+        <h3>Sales Categories</h3>
+        <div class="chip-row" id="chipsSalesCat"></div>
+        <div class="chip-add">
+          <input type="text" id="newSalesCat" placeholder="Add category">
+          <button onclick="addCategory('sales')">Add</button>
+        </div>
+      </div>
+
+      <div class="settings-block">
+        <h3>Purchase Categories</h3>
+        <div class="chip-row" id="chipsPurchaseCat"></div>
+        <div class="chip-add">
+          <input type="text" id="newPurchaseCat" placeholder="Add category">
+          <button onclick="addCategory('purchase')">Add</button>
+        </div>
+      </div>
+
+      <div class="settings-block">
+        <h3>Expense Categories</h3>
+        <div class="chip-row" id="chipsExpenseCat"></div>
+        <div class="chip-add">
+          <input type="text" id="newExpenseCat" placeholder="Add category">
+          <button onclick="addCategory('expense')">Add</button>
+        </div>
+      </div>
+
+      <div class="settings-block">
+        <h3>Payment Methods</h3>
+        <div class="chip-row" id="chipsPayment"></div>
+        <div class="chip-add">
+          <input type="text" id="newPayment" placeholder="Add payment method">
+          <button onclick="addCategory('payment')">Add</button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <button class="fab" id="fabAdd" onclick="openAddSheet()">+</button>
+
+  <nav class="bottomnav">
+    <button class="navbtn active" data-page="dashboard" onclick="goPage('dashboard')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+      <span>Dashboard</span><i class="dot-ind"></i>
+    </button>
+    <button class="navbtn" data-page="sales" onclick="goPage('sales')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      <span>Sales</span><i class="dot-ind"></i>
+    </button>
+    <button class="navbtn" data-page="purchase" onclick="goPage('purchase')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+      <span>Purchase</span><i class="dot-ind"></i>
+    </button>
+    <button class="navbtn" data-page="expense" onclick="goPage('expense')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path></svg>
+      <span>Expense</span><i class="dot-ind"></i>
+    </button>
+    <button class="navbtn" data-page="settings" onclick="goPage('settings')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      <span>Settings</span><i class="dot-ind"></i>
+    </button>
+  </nav>
+</div>
+
+<!-- ===================== ADD/EDIT TRANSACTION SHEET ===================== -->
+<div class="overlay" id="overlay" onclick="closeSheet()"></div>
+<div class="sheet" id="txnSheet">
+  <div class="sheet-handle"></div>
+  <button class="sheet-close" onclick="closeSheet()">✕</button>
+  <h2 id="sheetTitle">Add Sale</h2>
+  <form id="txnForm" onsubmit="return saveTxn(event)">
+    <div class="field">
+      <label>Date</label>
+      <input type="date" id="fDate" required>
+    </div>
+    <div class="field" id="fRefWrap">
+      <label id="fRefLabel">Invoice No</label>
+      <input type="text" id="fRef" placeholder="e.g. INV-1001">
+    </div>
+    <div class="field">
+      <label id="fNameLabel">Product / Service</label>
+      <input type="text" id="fName" placeholder="Item name" required>
+    </div>
+    <div class="field">
+      <label>Category</label>
+      <select id="fCategory" required></select>
+    </div>
+    <div class="row2" id="qtyPriceRow">
+      <div class="field">
+        <label>Quantity</label>
+        <input type="number" id="fQty" min="0" step="any" placeholder="0" oninput="updateComputedTotal()">
+      </div>
+      <div class="field">
+        <label>Unit Price</label>
+        <input type="number" id="fPrice" min="0" step="any" placeholder="0.00" oninput="updateComputedTotal()">
+      </div>
+    </div>
+    <div class="field" id="amountOnlyWrap" style="display:none;">
+      <label>Amount</label>
+      <input type="number" id="fAmount" min="0" step="any" placeholder="0.00" oninput="updateComputedTotal()">
+    </div>
+    <div class="computed-total" id="computedTotalWrap">
+      <span>Total Amount</span>
+      <span class="v num" id="computedTotalVal">৳0.00</span>
+    </div>
+    <div class="field" id="fPartyWrap">
+      <label id="fPartyLabel">Customer</label>
+      <input type="text" id="fParty" placeholder="Name">
+    </div>
+    <div class="field">
+      <label>Payment Method</label>
+      <select id="fPayment"></select>
+    </div>
+    <div class="field">
+      <label>Notes</label>
+      <textarea id="fNotes" rows="2" placeholder="Optional note"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Entry</button>
+    <button type="button" class="btn btn-ghost" style="margin-top:10px;" onclick="closeSheet()">Cancel</button>
+  </form>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* =========================================================
+   STATE
+   In-memory only (no browser storage is used in this preview).
+   When you deploy this file to your own hosting / GitHub Pages,
+   data is automatically read from and written to Google Sheets
+   via loadAllFromSheet() and postToSheet() below.
+   ========================================================= */
+const state = {
+  user: null,
+  company: { name: "My Business", currency: "৳" },
+  settings: {
+    salesCategories: ["Product Sale","Service","Wholesale","Retail","Online Order","Other Income"],
+    purchaseCategories: ["Raw Material","Stock/Goods","Packaging","Equipment","Other Purchase"],
+    expenseCategories: ["Shop Rent","Salary","Electricity Bill","Transport","Marketing","Internet/Phone","Maintenance","Office Expense","Other Expense"],
+    paymentMethods: ["Cash","Bank","bKash","Nagad","Rocket","Card","Cheque"],
+    // Connected to the user's Apps Script Web App deployment
+    sheetUrl: "https://script.google.com/macros/s/AKfycbywrkR2qodIr6htOhCxGeOi_arPQ9ed4YdBSdDRCGKX65_vCCd7JlwF_8Qi_nHYbkSj/exec"
+  },
+  sales: [],
+  purchases: [],
+  expenses: [],
+  currentPage: "dashboard",
+  currentPeriod: "today",
+  editing: null // {type, id}
+};
+
+let idCounter = 1;
+const todayISO = () => new Date().toISOString().slice(0,10);
+
+/* ---------------- GOOGLE SHEET SYNC ---------------- */
+const SHEET_TYPE_MAP = { sales: 'KhatabookSales', purchase: 'KhatabookPurchase', expense: 'KhatabookExpense' };
+
+function postToSheet(type, action, data){
+  const sheet = SHEET_TYPE_MAP[type];
+  const url = state.settings.sheetUrl
+    + '?sheet=' + encodeURIComponent(sheet)
+    + '&action=' + encodeURIComponent(action)
+    + '&data=' + encodeURIComponent(JSON.stringify(data));
+  return fetch(url).then(r => r.json());
+}
+
+function loadSheetData(type){
+  const sheet = SHEET_TYPE_MAP[type];
+  return fetch(state.settings.sheetUrl + '?sheet=' + encodeURIComponent(sheet))
+    .then(r => r.json())
+    .then(rows => Array.isArray(rows) ? rows.map(normalizeRow) : []);
+}
+function normalizeRow(r){
+  return {
+    ...r,
+    qty: r.qty !== undefined && r.qty !== '' ? Number(r.qty) : undefined,
+    price: r.price !== undefined && r.price !== '' ? Number(r.price) : undefined,
+    total: Number(r.total) || 0
+  };
+}
+
+function loadAllFromSheet(showFeedback){
+  const btn = document.getElementById('refreshBtn');
+  if(btn) btn.classList.add('spinning');
+  return Promise.all([
+    loadSheetData('sales'),
+    loadSheetData('purchase'),
+    loadSheetData('expense')
+  ]).then(([sales, purchases, expenses])=>{
+    state.sales = sales;
+    state.purchases = purchases;
+    state.expenses = expenses;
+    renderAll();
+    showSyncPill('Synced just now');
+    if(showFeedback) showToast('Synced with Google Sheet');
+  }).catch(err=>{
+    console.error('Sheet load failed', err);
+    if(showFeedback) showToast('Sync failed — check your Apps Script deployment');
+  }).finally(()=>{
+    if(btn) btn.classList.remove('spinning');
+  });
+}
+function manualRefresh(){
+  loadAllFromSheet(true);
+}
+let syncPillTimer;
+function showSyncPill(msg){
+  const pill = document.getElementById('syncPill');
+  if(!pill) return;
+  pill.textContent = msg;
+  pill.classList.add('show');
+  clearTimeout(syncPillTimer);
+  syncPillTimer = setTimeout(()=> pill.classList.remove('show'), 1800);
+}
+// Auto-refresh every 15s so edits made directly in the Google Sheet
+// (or from another device) show up here without any manual action.
+setInterval(()=> loadAllFromSheet(false), 15000);
+// Also refresh the moment the app/tab becomes visible again —
+// covers the common case of switching to Sheets, editing, then
+// switching back to this app.
+document.addEventListener('visibilitychange', ()=>{
+  if(document.visibilityState === 'visible') loadAllFromSheet(false);
+});
+
+/* ---------------- NAVIGATION ---------------- */
+function goPage(page){
+  state.currentPage = page;
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + page).classList.add('active');
+  document.querySelectorAll('.navbtn').forEach(b => b.classList.toggle('active', b.dataset.page === page));
+  const labels = {dashboard:'Dashboard', sales:'Sales Ledger', purchase:'Purchase Ledger', expense:'Expense Ledger', settings:'Settings'};
+  document.getElementById('topPageLabel').textContent = labels[page];
+  document.getElementById('fabAdd').style.display = (page === 'settings' || page === 'dashboard') ? 'none' : 'flex';
+  if(page === 'dashboard') renderDashboard();
+  if(page === 'sales') renderList('sales');
+  if(page === 'purchase') renderList('purchase');
+  if(page === 'expense') renderList('expense');
+  if(page === 'settings') renderSettings();
+}
+
+document.getElementById('periodTabs').addEventListener('click', (e)=>{
+  const btn = e.target.closest('button');
+  if(!btn) return;
+  state.currentPeriod = btn.dataset.period;
+  document.querySelectorAll('#periodTabs button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderDashboard();
+});
+
+/* ---------------- DATE HELPERS (mirrors the spreadsheet SUMIFS logic) ---------------- */
+function getPeriodRange(period){
+  const now = new Date(); now.setHours(0,0,0,0);
+  let start;
+  if(period === 'today'){ start = new Date(now); }
+  else if(period === 'week'){ start = new Date(now); const day = (start.getDay()+6)%7; start.setDate(start.getDate()-day); }
+  else if(period === 'month'){ start = new Date(now.getFullYear(), now.getMonth(), 1); }
+  else if(period === 'year'){ start = new Date(now.getFullYear(), 0, 1); }
+  else { start = new Date(2000,0,1); }
+  return { start, end: now };
+}
+function inRange(dateStr, range){
+  const d = new Date(dateStr + 'T00:00:00');
+  return d >= range.start && d <= range.end;
+}
+function fmtMoney(n){
+  const v = isFinite(n) ? n : 0;
+  return state.company.currency + v.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+function sortKey(t){ return t.date + '_' + String(t.id).padStart(8,'0'); }
+function fmtDate(iso){
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'});
+}
+
+/* ---------------- COMPUTATIONS ---------------- */
+function sumInRange(list, range){ return list.filter(t => inRange(t.date, range)).reduce((s,t)=>s+t.total,0); }
+
+function renderDashboard(){
+  const range = getPeriodRange(state.currentPeriod);
+  const sales = sumInRange(state.sales, range);
+  const purchase = sumInRange(state.purchases, range);
+  const expense = sumInRange(state.expenses, range);
+  const profit = sales - purchase - expense;
+  const margin = sales > 0 ? (profit/sales*100) : 0;
+  const count = state.sales.filter(t=>inRange(t.date,range)).length
+              + state.purchases.filter(t=>inRange(t.date,range)).length
+              + state.expenses.filter(t=>inRange(t.date,range)).length;
+
+  document.getElementById('kpiSales').textContent = fmtMoney(sales);
+  document.getElementById('kpiPurchase').textContent = fmtMoney(purchase);
+  document.getElementById('kpiExpense').textContent = fmtMoney(expense);
+  document.getElementById('kpiCount').textContent = count;
+  document.getElementById('plValue').textContent = fmtMoney(profit);
+  document.getElementById('plMargin').textContent = margin.toFixed(1) + '%';
+  const banner = document.getElementById('plBanner');
+  banner.className = 'pl-banner ' + (profit >= 0 ? 'pos' : 'neg');
+
+  renderTrendChart();
+  renderRecentActivity();
+}
+
+function renderTrendChart(){
+  const now = new Date();
+  const year = now.getFullYear();
+  document.getElementById('chartYear').textContent = year;
+  const months = Array.from({length:12}, (_,i)=>i);
+  const monthly = months.map(m=>{
+    const start = new Date(year, m, 1);
+    const end = new Date(year, m+1, 0);
+    const r = {start, end};
+    return {
+      sales: sumInRange(state.sales, r),
+      purchase: sumInRange(state.purchases, r),
+      expense: sumInRange(state.expenses, r)
+    };
+  });
+  const maxVal = Math.max(1, ...monthly.map(m=>Math.max(m.sales,m.purchase,m.expense)));
+  const svg = document.getElementById('trendChart');
+  const W = 480, H = 150, padB = 18, padT = 6;
+  const groupW = W/12;
+  const barW = 6.5;
+  let html = '';
+  const mNames = ['J','F','M','A','M','J','J','A','S','O','N','D'];
+  monthly.forEach((m, i)=>{
+    const cx = i*groupW + groupW/2;
+    const scale = (H-padT-padB) / maxVal;
+    const bars = [
+      {v:m.sales, color:'#17A379', dx:-9},
+      {v:m.purchase, color:'#EAA23A', dx:0},
+      {v:m.expense, color:'#E24C4B', dx:9}
+    ];
+    bars.forEach(b=>{
+      const h = Math.max(1, b.v*scale);
+      html += `<rect x="${cx+b.dx-barW/2}" y="${H-padB-h}" width="${barW}" height="${h}" rx="2" fill="${b.color}" opacity="0.92"></rect>`;
+    });
+    html += `<text x="${cx}" y="${H-4}" font-size="9" fill="#5E6D66" text-anchor="middle" font-family="IBM Plex Mono">${mNames[i]}</text>`;
+  });
+  svg.innerHTML = html;
+}
+
+function renderRecentActivity(){
+  const all = [
+    ...state.sales.map(t=>({...t, kind:'sales'})),
+    ...state.purchases.map(t=>({...t, kind:'purchase'})),
+    ...state.expenses.map(t=>({...t, kind:'expense'}))
+  ].sort((a,b)=> sortKey(b).localeCompare(sortKey(a))).slice(0,6);
+
+  const box = document.getElementById('recentActivity');
+  if(all.length === 0){
+    box.innerHTML = emptyStateHTML('No activity yet', 'Add your first sale, purchase or expense using the + button.');
+    return;
+  }
+  box.innerHTML = all.map(t => txnRowHTML(t, t.kind, false)).join('');
+}
+
+/* ---------------- LEDGER LISTS ---------------- */
+function renderList(type){
+  const list = state[type + (type==='sales'?'':'')] ; // placeholder, resolved below
+}
+
+function getListFor(type){
+  if(type === 'sales') return state.sales;
+  if(type === 'purchase') return state.purchases;
+  return state.expenses;
+}
+
+function renderListPage(type){
+  const list = getListFor(type).slice().sort((a,b)=> sortKey(b).localeCompare(sortKey(a)));
+  const total = getListFor(type).reduce((s,t)=>s+t.total,0);
+  document.getElementById(type + 'TotalLbl').textContent = fmtMoney(total);
+  const box = document.getElementById(type + 'List');
+  if(list.length === 0){
+    const msg = { sales:'No sales recorded yet.', purchase:'No purchases recorded yet.', expense:'No expenses recorded yet.' }[type];
+    box.innerHTML = emptyStateHTML(msg, 'Tap the + button to add your first entry.');
+    return;
+  }
+  box.innerHTML = list.map(t => txnRowHTML(t, type, true)).join('');
+}
+// overwrite renderList with the real implementation
+renderList = renderListPage;
+
+function emptyStateHTML(title, hint){
+  return `<div class="empty-state"><div class="glyph">🗒️</div><div>${title}</div><div class="hint">${hint}</div></div>`;
+}
+
+function txnRowHTML(t, kind, withActions){
+  const metaBits = [];
+  metaBits.push(fmtDate(t.date));
+  if(t.category) metaBits.push(t.category);
+  if(t.party) metaBits.push(t.party);
+  const name = t.name || t.category || '—';
+  const actions = withActions ? `
+    <div class="txn-actions">
+      <button class="mini-btn" onclick="editTxn('${kind}','${t.id}')">✎</button>
+      <button class="mini-btn" onclick="deleteTxn('${kind}','${t.id}')">✕</button>
+    </div>` : '';
+  return `
+  <div class="txn-row">
+    <div class="txn-left">
+      <div class="txn-name">${escapeHTML(name)}</div>
+      <div class="txn-meta">${escapeHTML(metaBits.join(' · '))}</div>
+    </div>
+    <div class="txn-right">
+      <div class="txn-amt ${kind}">${fmtMoney(t.total)}</div>
+      ${actions}
+    </div>
+  </div>`;
+}
+function escapeHTML(s){ return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+/* ---------------- ADD / EDIT TRANSACTION SHEET ---------------- */
+function openAddSheet(){
+  const type = state.currentPage; // sales / purchase / expense
+  if(!['sales','purchase','expense'].includes(type)) return;
+  state.editing = { type, id: null };
+  configureSheetForType(type);
+  document.getElementById('txnForm').reset();
+  document.getElementById('fDate').value = todayISO();
+  updateComputedTotal();
+  openSheetEl();
+}
+function editTxn(type, id){
+  const list = getListFor(type);
+  const t = list.find(x => String(x.id) === String(id));
+  if(!t) return;
+  state.editing = { type, id };
+  configureSheetForType(type);
+  document.getElementById('fDate').value = t.date;
+  document.getElementById('fRef').value = t.ref || '';
+  document.getElementById('fName').value = t.name || '';
+  document.getElementById('fCategory').value = t.category || '';
+  document.getElementById('fQty').value = t.qty ?? '';
+  document.getElementById('fPrice').value = t.price ?? '';
+  document.getElementById('fAmount').value = t.total ?? '';
+  document.getElementById('fParty').value = t.party || '';
+  document.getElementById('fPayment').value = t.payment || '';
+  document.getElementById('fNotes').value = t.notes || '';
+  updateComputedTotal();
+  openSheetEl();
+}
+function deleteTxn(type, id){
+  const list = getListFor(type);
+  const idx = list.findIndex(x => String(x.id) === String(id));
+  if(idx > -1){
+    const removed = list[idx];
+    list.splice(idx,1);
+    renderList(type);
+    renderDashboard();
+    postToSheet(type, 'delete', { id: removed.id })
+      .then(()=> showToast('Entry deleted'))
+      .catch(err=>{
+        console.error('Sheet sync failed', err);
+        showToast('Deleted locally — sheet sync failed');
+      });
+  }
+}
+function configureSheetForType(type){
+  const isExpense = type === 'expense';
+  const titleMap = { sales:'Sale', purchase:'Purchase', expense:'Expense' };
+  document.getElementById('sheetTitle').textContent = (state.editing.id ? 'Edit ' : 'Add ') + titleMap[type];
+  document.getElementById('fRefWrap').style.display = isExpense ? 'none' : 'block';
+  document.getElementById('fRefLabel').textContent = type === 'sales' ? 'Invoice No' : 'Reference No';
+  document.getElementById('fNameLabel').textContent = type === 'sales' ? 'Product / Service' : (type === 'purchase' ? 'Item' : 'Description');
+  document.getElementById('fName').placeholder = type === 'expense' ? 'e.g. July shop rent' : 'Item name';
+  document.getElementById('qtyPriceRow').style.display = isExpense ? 'none' : 'grid';
+  document.getElementById('amountOnlyWrap').style.display = isExpense ? 'block' : 'none';
+  document.getElementById('fPartyWrap').style.display = isExpense ? 'none' : 'block';
+  document.getElementById('fPartyLabel').textContent = type === 'sales' ? 'Customer' : 'Supplier';
+
+  const catSelect = document.getElementById('fCategory');
+  const cats = type === 'sales' ? state.settings.salesCategories : type === 'purchase' ? state.settings.purchaseCategories : state.settings.expenseCategories;
+  catSelect.innerHTML = cats.map(c => `<option value="${escapeHTML(c)}">${escapeHTML(c)}</option>`).join('');
+
+  const paySelect = document.getElementById('fPayment');
+  paySelect.innerHTML = state.settings.paymentMethods.map(p => `<option value="${escapeHTML(p)}">${escapeHTML(p)}</option>`).join('');
+}
+function updateComputedTotal(){
+  const type = state.editing ? state.editing.type : state.currentPage;
+  let total = 0;
+  if(type === 'expense'){
+    total = parseFloat(document.getElementById('fAmount').value) || 0;
+  } else {
+    const qty = parseFloat(document.getElementById('fQty').value) || 0;
+    const price = parseFloat(document.getElementById('fPrice').value) || 0;
+    total = qty * price;
+  }
+  document.getElementById('computedTotalVal').textContent = fmtMoney(total);
+  return total;
+}
+function saveTxn(e){
+  e.preventDefault();
+  const { type, id } = state.editing;
+  const total = updateComputedTotal();
+  const payload = {
+    date: document.getElementById('fDate').value,
+    ref: document.getElementById('fRef').value.trim(),
+    name: document.getElementById('fName').value.trim(),
+    category: document.getElementById('fCategory').value,
+    qty: type !== 'expense' ? (parseFloat(document.getElementById('fQty').value) || 0) : undefined,
+    price: type !== 'expense' ? (parseFloat(document.getElementById('fPrice').value) || 0) : undefined,
+    party: document.getElementById('fParty').value.trim(),
+    payment: document.getElementById('fPayment').value,
+    notes: document.getElementById('fNotes').value.trim(),
+    total
+  };
+  const list = getListFor(type);
+  let action, record;
+  if(id){
+    const t = list.find(x => String(x.id) === String(id));
+    Object.assign(t, payload);
+    record = t;
+    action = 'update';
+  } else {
+    payload.id = 'id_' + Date.now() + '_' + (idCounter++);
+    list.push(payload);
+    record = payload;
+    action = 'add';
+  }
+  closeSheet();
+  renderList(type);
+  renderDashboard();
+  showToast('Saving to sheet…');
+  postToSheet(type, action, record)
+    .then(()=> showToast(action === 'add' ? 'Entry saved' : 'Entry updated'))
+    .catch(err=>{
+      console.error('Sheet sync failed', err);
+      showToast('Saved locally — sheet sync failed');
+    });
+  return false;
+}
+
+function openSheetEl(){
+  document.getElementById('overlay').classList.add('open');
+  document.getElementById('txnSheet').classList.add('open');
+}
+function closeSheet(){
+  document.getElementById('overlay').classList.remove('open');
+  document.getElementById('txnSheet').classList.remove('open');
+}
+
+/* ---------------- SETTINGS ---------------- */
+function renderSettings(){
+  document.getElementById('settingsCoName').value = state.company.name;
+  document.getElementById('settingsCurrency').value = state.company.currency;
+  renderChips('chipsSalesCat', state.settings.salesCategories, 'sales');
+  renderChips('chipsPurchaseCat', state.settings.purchaseCategories, 'purchase');
+  renderChips('chipsExpenseCat', state.settings.expenseCategories, 'expense');
+  renderChips('chipsPayment', state.settings.paymentMethods, 'payment');
+}
+function renderChips(elId, arr, key){
+  document.getElementById(elId).innerHTML = arr.map((v,i)=>
+    `<span class="chip">${escapeHTML(v)}<button onclick="removeCategory('${key}',${i})">✕</button></span>`
+  ).join('');
+}
+function keyToArray(key){
+  return { sales: state.settings.salesCategories, purchase: state.settings.purchaseCategories,
+           expense: state.settings.expenseCategories, payment: state.settings.paymentMethods }[key];
+}
+function addCategory(key){
+  const inputIdMap = { sales:'newSalesCat', purchase:'newPurchaseCat', expense:'newExpenseCat', payment:'newPayment' };
+  const input = document.getElementById(inputIdMap[key]);
+  const val = input.value.trim();
+  if(!val) return;
+  const arr = keyToArray(key);
+  if(arr.includes(val)){ showToast('Already exists'); return; }
+  arr.push(val);
+  input.value = '';
+  renderSettings();
+  showToast('Added');
+}
+function removeCategory(key, idx){
+  keyToArray(key).splice(idx,1);
+  renderSettings();
+}
+function saveProfile(){
+  state.company.name = document.getElementById('settingsCoName').value.trim() || 'My Business';
+  state.company.currency = document.getElementById('settingsCurrency').value;
+  document.getElementById('topCoName').textContent = state.company.name;
+  document.getElementById('brandMark').textContent = state.company.name.trim().charAt(0).toUpperCase() || 'K';
+  showToast('Business profile saved');
+  renderDashboard();
+}
+/* ---------------- TOAST ---------------- */
+let toastTimer;
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=> t.classList.remove('show'), 2200);
+}
+
+/* ---------------- INIT ---------------- */
+function renderAll(){
+  document.getElementById('topCoName').textContent = state.company.name;
+  document.getElementById('brandMark').textContent = state.company.name.charAt(0).toUpperCase();
+  renderDashboard();
+  renderSettings();
+}
+renderAll();
+loadAllFromSheet(false);
+
+if('serviceWorker' in navigator){
+  window.addEventListener('load', ()=>{
+    navigator.serviceWorker.register('service-worker.js').catch(err=>{
+      console.error('Service worker registration failed', err);
+    });
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#18273A"/>
+      <stop offset="1" stop-color="#2B5270"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="0.18" cy="0.1" r="0.55">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background squircle -->
+  <rect x="0" y="0" width="512" height="512" rx="104" fill="url(#bg)"/>
+  <rect x="0" y="0" width="512" height="512" rx="104" fill="url(#sheen)"/>
+
+  <!-- ascending bar chart -->
+  <rect x="118" y="304" width="54" height="68"  rx="10" fill="#FFFFFF" fill-opacity="0.6"/>
+  <rect x="192" y="264" width="54" height="108" rx="10" fill="#FFFFFF" fill-opacity="0.73"/>
+  <rect x="266" y="222" width="54" height="150" rx="10" fill="#FFFFFF" fill-opacity="0.87"/>
+  <rect x="340" y="176" width="54" height="196" rx="10" fill="#C8913C"/>
+
+  <!-- trend line with arrowhead -->
+  <polyline points="100,312 145,288 219,248 293,206 367,160 392,128"
+            fill="none" stroke="#A36F27" stroke-width="8"
+            stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="392,128 362,136 384,158" fill="#A36F27"/>
+</svg>
